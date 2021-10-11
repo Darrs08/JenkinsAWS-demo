@@ -1,2 +1,2 @@
 @Library('shared-AWS-Lib') _
-deployEC2()
+scriptStages()
