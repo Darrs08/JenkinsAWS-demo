@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: S3 bucket creation using Jenkins Build.
+Description: creation of S3 bucket using cloudformation through Jenkins Build.
 Resources:
   Bucket:
     Type: AWS::S3::Bucket
