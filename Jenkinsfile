@@ -1,3 +1,3 @@
 @Library('shared-AWS-Lib') _
-scriptSample()
-//scriptStages()
+//scriptSample()
+scriptStages()
