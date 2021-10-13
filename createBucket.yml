@@ -4,4 +4,4 @@ Resources:
   Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: 'testbucketsample-darren'
+      BucketName: 'sample-bucket-darren'
