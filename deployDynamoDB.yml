@@ -12,5 +12,3 @@ Resources:
     Properties:
       TableName: !Ref TableName
       BillingMode: PAY_PER_REQUEST
- 
-      
