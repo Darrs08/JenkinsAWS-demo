@@ -9,7 +9,7 @@ Parameters:
     AllowedPattern: ^[A-Za-z]+$
 Resources:
   Type: AWS::DynamoDB::Table
-    Properties:{
+  Properties: {
       TableName: !Ref TableName
       BillingMode: PAY_PER_REQUEST
     }
