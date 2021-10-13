@@ -5,4 +5,9 @@ Resources:
     Properties:
         BillingMode: PAY_PER_REQUEST
         TableName: DarrenTable
-  
+        AttributeDefinitions:
+          - AttributeName: itemId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: itemId
+            KeyType: HASH
