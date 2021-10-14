@@ -5,6 +5,7 @@ pipeline {
             AWS_CRED = 'cloud_user'
             AWS_REGION = 'us-east-1'
             templateBucket = 'filesdarren'
+            stackName = 'EC2Jenkins-Darren'
         }
         stages {
              stage('Upload Templates') {                  
@@ -39,7 +40,7 @@ pipeline {
             }
             stage('Deploy EC2') {                  
                 steps {
-                    deployToEC2(stackName: "EC2Jenkins-Darren", s3Bucket: "${templateBucket}")
+                        deployToEC2(stackName: "${stackName}", s3Bucket: "${templateBucket}")
                 }
             }
         }
