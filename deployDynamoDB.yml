@@ -1,10 +1,18 @@
 AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  CreateTable:
+    Type: String
+    Default: 'DarrenTable'
+    Description: (Required) The name of the new DynamoDB table you want to create
+    MinLength: 3
+    MaxLength: 50
+    AllowedPattern: ^[A-Za-z]+$
 Resources:
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
     Properties:
         BillingMode: PAY_PER_REQUEST
-        TableName: DarrenTable
+        TableName: Ref! CreateTable
         AttributeDefinitions:
           - AttributeName: itemId
             AttributeType: S
